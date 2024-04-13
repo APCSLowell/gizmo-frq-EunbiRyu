@@ -14,7 +14,7 @@ public class OnlinePurchaseManager
     /* to be implemented in part (a) */
     int result = 0;
     for(int i=0; i<purchases.size(); i++){
-      if(i.getMaker().equals(maker) && i.isElectronic()){
+      if(purchases(i).getMaker().equals(maker) && purchases(i).isElectronic()){
         result++;
       }
     }
